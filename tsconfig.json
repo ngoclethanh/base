@@ -22,8 +22,18 @@
     "lib": [
       "ES2022",
       "dom"
-    ]
+    ],
+    "paths":{
+      "@env": ["src/environments/environment"],
+      "@services/*": ["src/app/shared/services/*"],
+      "@helper": ["src/app/shared/helper"],
+      "@types": ["src/app/shared/types"],
+      "@config": ["src/app/shared/config"],
+      "@shared/*": ["src/app/shared/*"],
+      
+    },
   },
+  
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,

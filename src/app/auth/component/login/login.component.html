@@ -1,0 +1,31 @@
+<div class="page page-login">
+    <div class="card card--dark-lighter">
+      <div class="card-body">
+        <div class="logo text-center mb-5">
+          <img src="{{ 'assets/images/logo.png' }}" />
+        </div>
+        <form class="form mat-form" #form="ngForm"(submit)="login()">
+          <div class="mb-3 ">
+            <input
+            type="text"
+                    [(ngModel)]="user.username"
+                    name="username"
+                    label="Username"
+            >
+          </div>
+          <div class="mb-3">
+            <input
+                    [(ngModel)]="user.password"
+                    name="password"
+                    label="Password"
+                    type="password"
+            >
+          </div>
+          <div class="mb-3">
+            <button type="submit" class="btn btn-main w-100">Login</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  
